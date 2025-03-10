@@ -1,3 +1,21 @@
 h2 {
   font-family: 'REDEAX PRO', sans-serif;
 }
+#chisono {
+  display: flex;
+  align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+  justify-content: flex-start;
+}
+
+.contenitore {
+  display: flex;
+  align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+}
+
+.immagine {
+  margin-right: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+}
+
+.testo {
+  max-width: 600px; /* Imposta la larghezza massima del testo, per evitare che diventi troppo largo */
+}
