@@ -1,10 +1,10 @@
-h2 {
+body{
   font-family: 'REDEAX PRO', sans-serif;
 }
 #chisono {
-  display: flex;
+  
   align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
-  justify-content: flex-start;
+
 }
 
 .contenitore {
