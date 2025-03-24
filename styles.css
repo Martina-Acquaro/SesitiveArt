@@ -2,7 +2,7 @@ body{
   font-family: 'REDEAX PRO', sans-serif;
 }
 #chisono {
-  
+  text-align: center; 
   align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
 
 }
@@ -19,3 +19,101 @@ body{
 .testo {
   max-width: 600px; /* Imposta la larghezza massima del testo, per evitare che diventi troppo largo */
 }
+
+.chi-sono-container {
+  display: flex;
+  flex-direction: column; /* Cambia la direzione da orizzontale a verticale */
+  align-items: center; /* Centra gli elementi orizzontalmente */
+  margin-top: 20px;
+}
+
+.chi-sono-text {
+  padding-top: 20px; /* Aggiunge spazio sopra al testo */
+  text-align: center; /* Centra il testo */
+  max-width: 800px; /* Imposta una larghezza massima per il testo */
+}
+
+.chi-sono-image {
+  margin-bottom: 20px; /* Distanza tra immagine e testo */
+}
+
+.img-cerchio {
+  width: 200px; /* Imposta una larghezza per l'immagine */
+  height: 200px; /* Imposta l'altezza dell'immagine */
+  object-fit: cover; /* Copre completamente il cerchio senza distorsioni */
+  border-radius: 50%; /* Crea il cerchio */
+  border: 5px solid white; /* Bordo bianco per l'immagine */
+}
+#laboratori {
+  padding: 20px;
+  text-align: center; /* Centra il titolo */
+}
+
+.laboratori-container {
+  display: flex;
+  flex-wrap: wrap; /* Permette alle immagini di andare a capo se lo spazio non è sufficiente */
+  justify-content: space-between; /* Spazia gli elementi in modo uniforme */
+  gap: 20px; /* Distanza tra gli elementi */
+  margin-top: 20px;
+}
+
+.laboratorio-item {
+  display: flex;
+  flex-direction: column; /* Posiziona l'immagine sopra il testo */
+  align-items: center; /* Allinea il contenuto al centro */
+  width: 100%;
+  max-width: 300px; /* Limita la larghezza massima */
+}
+
+.laboratorio-image {
+  width: 300px; /* Imposta una larghezza fissa per l'immagine */
+  height: 300px; /* Imposta un'altezza fissa per l'immagine */
+  border-radius: 50%; /* Rende l'immagine circolare */
+  object-fit: cover; /* Ritaglia l'immagine per riempire il cerchio senza distorsioni */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera intorno alle immagini */
+  transition: transform 0.3s ease-in-out; /* Effetto di transizione quando si passa sopra con il mouse */
+  margin-bottom: 10px; /* Distanza tra l'immagine e il testo */
+}
+
+.laboratorio-image:hover {
+  transform: scale(1.05); /* Effetto ingrandimento quando si passa sopra con il mouse */
+}
+
+.laboratorio-titolo {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333; /* Colore del titolo */
+}
+
+.laboratorio-descrizione {
+  font-size: 1em;
+  color: #666; /* Colore descrizione */
+  text-align: center;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .laboratori-container {
+    flex-direction: column; /* Le immagini e il testo sono in colonna su schermi piccoli */
+    align-items: center; /* Allinea al centro */
+  }
+
+  .laboratorio-item {
+    max-width: 90%; /* Limita la larghezza al 90% su schermi piccoli */
+    margin-bottom: 20px; /* Distanza tra gli elementi */
+  }
+}
+
+/* Media query per schermi più larghi */
+@media (min-width: 1200px) {
+  .laboratori-container {
+    justify-content: space-evenly; /* Distribuisce uniformemente gli elementi su schermi più larghi */
+  }
+
+  .laboratorio-item {
+    width: 30%; /* Imposta la larghezza al 30% su schermi più larghi */
+  }
+}
+

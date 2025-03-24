@@ -8,39 +8,182 @@
     <link href="https://fonts.google.com/specimen/Readex+Pro" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
+    <style>
+        /* Stile base del menu */
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #e82d8a;
+            padding: 10px;
+            justify-content: flex-end; /* Sposta il menu a destra */
+        }
+
+        /* Logo */
+        .logo {
+            background-color: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Sposta i menu items a destra */
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Flexbox layout per la sezione "Chi Sono" */
+        #chisono {
+            padding: 20px;
+        }
+
+        .chi-sono-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .chi-sono-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .chi-sono-image {
+            flex-shrink: 0;
+        }
+
+        .img-cerchio {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        /* Stili aggiuntivi per le sezioni */
+        h2 {
+            color: #e82d8a;
+            font-size: 2em;
+        }
+
+        .paragrafo {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #52c7fd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
 </head>
 
-    <div>
-        <div style="text-align: center;">
+<body>
+    <nav>
+        <div class="logo">
             <img src="img/logo sensitive art.png" alt="logosensitivrart" height="60">
         </div>
+        <ul>
+            <li><a href="#chisono">Chi Sono</a></li>
+            <li><a href="#laboratori">I Miei Laboratori</a></li>
+            <li><a href="#contattami">Contattami</a></li>
+            <li><a href="#Contatti">Contatti</a></li>
+            <li><a href="#dove-trovarmi">Dove trovarmi</a></li>
+        </ul>
+    </nav>
 
-    </div>
-    <div id="chisono"> 
-        <h2>CHI SONO?</h2>
-        <div>
-            <div style="text-align: center;">
-                <img src="img/DSC_0212.JPG" alt="FOTOMarty" height="400">
-            </div>
-    
+    <div id="chisono">
+    <h2>CHI SONO?</h2>
+    <div class="chi-sono-container">
+        <div class="chi-sono-image">
+            <img src="img/DSC_0212.JPG" alt="FOTOMarty" class="img-cerchio">
         </div>
-       
-        <p class="paragrafo"> Acquaro Martina, ho 21 anni e vivo in Italia, in un piccolo paese vicino a Milano.  
-Ho una laurea in Studi sui laboratori artistici ed esperienziali e attualmente sto studiando Graphic Design. 
-Sono appassionata allo studio del movimento del corpo e del teatro espressivo, grazie a questo background creo laboratori di teatro, movimento e arti visive.  
-Lavoro come youth worker per un’associazione Erasmus in Italia, collaborando alla realizzazione di progetti ed eventi. 
-La mia passione per i viaggi mi ha permesso di partecipare a progetti in tutta Europa con loro. 
-Realizzo workshop e laboratori artistici su misura, mantendo costanti gli obiettivi di sensibilizzare le persone sul corretto uso dei materiali, 
-di utilizzo di materiali di recupero e di sostenibilità ambientale.</p>
+        <div class="chi-sono-text">
+            <p class="paragrafo">
+                Acquaro Martina, ho 21 anni e vivo in Italia, in un piccolo paese vicino a Milano.
+                Ho una laurea in Studi sui laboratori artistici ed esperienziali e attualmente sto studiando Graphic Design.
+                Sono appassionata allo studio del movimento del corpo e del teatro espressivo, grazie a questo background
+                creo laboratori di teatro, movimento e arti visive. Lavoro come youth worker per un’associazione Erasmus in
+                Italia, collaborando alla realizzazione di progetti ed eventi. La mia passione per i viaggi mi ha permesso di
+                partecipare a progetti in tutta Europa con loro. Realizzo workshop e laboratori artistici su misura, mantenendo
+                costanti gli obiettivi di sensibilizzare le persone sul corretto uso dei materiali, di utilizzo di materiali di
+                recupero e di sostenibilità ambientale.
+            </p>
+        </div>
     </div>
+</div>
 
     <div id="laboratori">
         <h2>I MIEI LABORATORI</h2>
-        <img src="img/IMG_3041.jpeg" alt="haiku" height="200">
-        <img src="img/IMG_3434.jpeg" alt="mask" height="200">
-        <img src="img/IMG_2980.jpeg" alt="SPONGEBOB" height="200">
-    </div>
-
+        <div class="laboratori-container">
+        <p class="paragrafo">
+            Ogni laboratorio nasce con l'idea di voler far provare un'esperienza artistica alle persone, 
+            andando ad utilizzare principalmente materiali di recupero.
+            Si basano sul metodo ArtLab dove partendo da una fase inizale, 
+            la persona inizia a connettersi con il metodo artistico che si andrà ad utilizzare per poi essere trasportato in una dimensione di creazione personale. 
+        </p>
+        <div class="laboratorio-item">
+            <img src="img/IMG_3041.jpeg" alt="haiku" class="laboratorio-image">
+            <div class="laboratorio-titolo">HAIKU</div>
+            <div class="laboratorio-descrizione">Laboratorio ispirato alla poesia giapponese</div>
+        </div>
+        <div class="laboratorio-item">
+            <img src="img/IMG_3434.jpeg" alt="mask" class="laboratorio-image">
+            <div class="laboratorio-titolo">MASCHERE</div>
+            <div class="laboratorio-descrizione">Creazione di maschere artistiche</div>
+        </div>
+        <div class="laboratorio-item">
+            <img src="img/IMG_2980.jpeg" alt="SPONGEBOB" class="laboratorio-image">
+            <div class="laboratorio-titolo">PITTURA</div>
+            <div class="laboratorio-descrizione">Laboratorio di disegno e pittura</div>
+        </div>
+ </div>
     <div id="contattami" class="section">
         <h2>CONTATTAMI</h2>
         <form action="mailto:acquaromartina9@gmail.com" method="post" enctype="text/plain">
@@ -50,32 +193,24 @@ di utilizzo di materiali di recupero e di sostenibilità ambientale.</p>
             <button type="submit">Invia</button>
         </form>
     </div>
+
     <div id="Contatti">
         <h2>CONTATTI</h2>
         <p class="paragrafo">
             <ul>
-                <li>sensitiveart@gmail.com</li>
-                <li>+393661164936</li>
-                <li><a href="https://www.instagram.com/sensitive_art_/<" target="_blank">@sensitiveart</a></li>
+                sensitiveart@gmail.com
+                +393661164936
+                <a href="https://www.instagram.com/sensitive_art_/" target="_blank">@sensitiveart</a>
             </ul>
         </p>
     </div>
 
     <div id="dove-trovarmi" class="section">
-        <h2>Dove trovarmi</h2>
-        <iframe 
-            width="100%" 
-            height="400" 
-            frameborder="0" 
-            style="border:0" 
-            allowfullscreen 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11055.583356071352!2d8.846043099999999!3d45.50864595000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478690e79c53fc41%3A0x5093baf1346b1cb1!2s20010%20Inveruno%20MI!5e0!3m2!1sit!2sit!4v1710070000000">
-        </iframe>
+        <h2>DOVE TROVARMI</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44761.23014071055!2d8.957496064532029!3d45.478326678520546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ec0132baf71b%3A0x40678022e66f150!2s20008%20Bareggio%2C%20Metropolitan%20City%20of%20Milan!5e0!3m2!1sen!2sit!4v1742809786121!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div id="footer"></div>
 
+    <div id="footer"></div>
 </body>
 
 </html>
