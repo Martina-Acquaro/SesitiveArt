@@ -2,13 +2,6 @@ body{
   font-family: 'REDEAX PRO', sans-serif;
 }
 
-#sensitive-art {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-}
-
 .chi-sono-container {
   display: flex;
   align-items: center;
