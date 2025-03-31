@@ -12,7 +12,7 @@ Progetto per la realizzazione di una pagina statica
 ## Indirizzo di pubblicazione Netlify
 
 Il repository è pubblicato a questo indirizzo 
-- Versione Netlify [https://github-netlify-boilerplate.netlify.app](https://github-netlify-boilerplate.netlify.app)
+- Versione Netlify [https://sensitiveart.netlify.app/](https://sensitiveart.netlify.app/)
 - Versione Vercel [https://github-netlify-boilerplate.vercel.app](https://github-netlify-boilerplate.vercel.app)
 
 ## Automazione
