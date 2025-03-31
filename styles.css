@@ -1,7 +1,30 @@
 body{
   font-family: 'REDEAX PRO', sans-serif;
 }
+#sensitive-art {
+  padding: 40px;
+  background-image: url('img/WhatsApp Image 2023-03-24 at 12.54.21.png'); /* Sostituisci con il percorso giusto */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Imposta l'immagine per coprire tutto il contenitore */
+  color: #000; /* Testo nero */
+  text-align: center; /* Centra il testo */
+}
 
+h2 {
+  font-size: 2rem;
+  color: #000; /* Colore del testo del titolo */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Aggiunge un'ombra per migliorare la visibilità sopra l'immagine */
+}
+
+.paragrafo {
+  font-size: 1.2rem;
+  color: #000; /* Colore del testo del paragrafo */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Ombra per migliorare la leggibilità */
+  max-width: 800px; /* Imposta una larghezza massima per il testo */
+  margin: 0 auto; /* Centra il testo */
+}
 .chi-sono-container {
   display: flex;
   align-items: center;
