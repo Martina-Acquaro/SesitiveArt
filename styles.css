@@ -1,6 +1,34 @@
 body{
   font-family: 'REDEAX PRO', sans-serif;
 }
+
+#sensitive-art {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.chi-sono-container {
+  display: flex;
+  align-items: center;
+}
+
+.chi-sono-image {
+  flex-shrink: 0;
+  width: 50%; /* Aumenta la larghezza dell'immagine */
+  margin-right: 20px; /* Aggiungi uno spazio tra l'immagine e il testo */
+}
+
+.chi-sono-image img {
+  width: 100%; /* L'immagine occuperà tutta la larghezza del contenitore */
+  height: auto; /* Mantieni le proporzioni dell'immagine */
+  border-radius: 50%; /* Mantieni il bordo rotondo se desiderato */
+}
+
+.chi-sono-text {
+  flex-grow: 1;
+}
 #chisono {
   text-align: center; 
   align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
