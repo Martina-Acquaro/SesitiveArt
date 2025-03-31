@@ -1,51 +1,61 @@
 body{
   font-family: 'REDEAX PRO', sans-serif;
+  
   #sensitive-art {
-    padding: 40px;
-    background-image: url('img/WhatsApp Image 2023-03-24 at 12.54.21.png'); /* Sostituisci con il percorso giusto */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Imposta l'immagine per coprire tutto il contenitore */
-    color: #000; /* Testo nero */
+    height: 100vh; /* Imposta l'altezza al 100% della finestra del browser */
+    width: 100%; /* Imposta la larghezza al 100% */
+    background-image: url('img/IMG_3233.jpeg'); /* Sostituisci con il percorso giusto */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    background-size: cover; /* Fa in modo che l'immagine copra l'intero schermo */
+    filter: opacity(0.6);
+    color: #fff; /* Testo bianco */
     text-align: center; /* Centra il testo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il testo verticalmente */
+    align-items: center; /* Centra il testo orizzontalmente */
+    position: relative; /* Per aggiungere un overlay sopra l'immagine */
 }
 
+/* Aggiungi un overlay per migliorare il contrasto del testo */
+#sensitive-art::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Sovrapposizione semi-trasparente */
+    z-index: 1;
+}
+
+/* Stile per il titolo */
 h2 {
-    font-size: 2rem;
-    color: #000; /* Colore del testo del titolo */
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Aggiunge un'ombra per migliorare la visibilità sopra l'immagine */
+    font-size: 4rem; /* Dimensione del testo del titolo molto grande */
+    font-family:'REDEAX PRO', sans-serif; /* Scegli una font moderna e leggibile */
+    font-weight: bold; /* Aumenta la spessore del font per renderlo più visibile */
+    color: #fff; /* Colore bianco per il titolo */
+    margin-bottom: 30px; /* Aggiungi spazio tra il titolo e il paragrafo */
+    z-index: 2; /* Posiziona il titolo sopra l'overlay */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Ombra per migliorare la leggibilità */
 }
 
+/* Stile per il paragrafo */
 .paragrafo {
-    font-size: 1.2rem;
-    color: #000; /* Colore del testo del paragrafo */
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Ombra per migliorare la leggibilità */
-    max-width: 800px; /* Imposta una larghezza massima per il testo */
+    font-size: 1.8rem; /* Aumenta la dimensione del testo del paragrafo */
+    font-family:'REDEAX PRO', sans-serif;/* Font leggibile */
+    z-index: 2; /* Posiziona il paragrafo sopra l'overlay */
+    max-width: 800px; /* Limita la larghezza per rendere il testo più leggibile */
     margin: 0 auto; /* Centra il testo */
-}
-.chi-sono-container {
-  display: flex;
-  align-items: center;
+    padding: 0 20px; /* Aggiungi un po' di padding laterale */
+    line-height: 1.6; /* Aggiungi spazio tra le righe del paragrafo per leggibilità */
+    color: #fff;
+
 }
 
-.chi-sono-image {
-  flex-shrink: 0;
-  width: 50%; /* Aumenta la larghezza dell'immagine */
-  margin-right: 20px; /* Aggiungi uno spazio tra l'immagine e il testo */
-}
-
-.chi-sono-image img {
-  width: 100%; /* L'immagine occuperà tutta la larghezza del contenitore */
-  height: auto; /* Mantieni le proporzioni dell'immagine */
-  border-radius: 50%; /* Mantieni il bordo rotondo se desiderato */
-}
-
-.chi-sono-text {
-  flex-grow: 1;
-}
 #chisono {
-  text-align: center; 
+  text-align: center;
   align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
 
 }
@@ -55,13 +65,16 @@ h2 {
   align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
 }
 
+
 .immagine {
   margin-right: 100 px; /* Aggiungi spazio tra l'immagine e il testo */
 }
 
+
 .testo {
   max-width: 600px; /* Imposta la larghezza massima del testo, per evitare che diventi troppo largo */
 }
+
 
 .chi-sono-container {
   display: flex;
@@ -70,15 +83,19 @@ h2 {
   margin-top: 20px;
 }
 
+
 .chi-sono-text {
   padding-top: 20px; /* Aggiunge spazio sopra al testo */
   text-align: center; /* Centra il testo */
   max-width: 800px; /* Imposta una larghezza massima per il testo */
+  
 }
+
 
 .chi-sono-image {
   margin-bottom: 20px; /* Distanza tra immagine e testo */
 }
+
 
 .img-cerchio {
   width: 200px; /* Imposta una larghezza per l'immagine */
@@ -87,17 +104,21 @@ h2 {
   border-radius: 50%; /* Crea il cerchio */
   border: 5px solid white; /* Bordo bianco per l'immagine */
 }
+
 #laboratori {
-  padding: 20px;
+  padding: 40px;
   text-align: center; /* Centra il titolo */
+  background-color: #f9f9f9; /* Aggiunge uno sfondo chiaro alla sezione */
+  border-radius: 8px; /* Bordo */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra intorno alla sezione */
 }
 
 .laboratori-container {
   display: flex;
   flex-wrap: wrap; /* Permette alle immagini di andare a capo se lo spazio non è sufficiente */
-  justify-content: space-between; /* Spazia gli elementi in modo uniforme */
-  gap: 20px; /* Distanza tra gli elementi */
-  margin-top: 20px;
+  justify-content: space-evenly; /* Allinea gli elementi con spazio uguale tra di loro */
+  gap: 30px; /* Distanza tra gli elementi */
+  margin-top: 30px;
 }
 
 .laboratorio-item {
@@ -105,35 +126,47 @@ h2 {
   flex-direction: column; /* Posiziona l'immagine sopra il testo */
   align-items: center; /* Allinea il contenuto al centro */
   width: 100%;
-  max-width: 300px; /* Limita la larghezza massima */
+  max-width: 320px; /* Limita la larghezza massima */
+  background-color: #fff; /* Aggiungi uno sfondo bianco per ogni laboratorio */
+  border-radius: 12px; /* Angoli arrotondati per i singoli elementi */
+  padding: 20px; /* Spaziatura interna */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più marcata per l'effetto card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizione migliorata */
+}
+
+.laboratorio-item:hover {
+  transform: translateY(-10px); /* Sposta l'elemento verso l'alto al passaggio del mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Ombra più marcata al passaggio del mouse */
 }
 
 .laboratorio-image {
-  width: 300px; /* Imposta una larghezza fissa per l'immagine */
-  height: 300px; /* Imposta un'altezza fissa per l'immagine */
+  width: 200px; /* Dimensione più compatta per l'immagine */
+  height: 200px; /* Imposta un'altezza fissa per l'immagine */
   border-radius: 50%; /* Rende l'immagine circolare */
   object-fit: cover; /* Ritaglia l'immagine per riempire il cerchio senza distorsioni */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera intorno alle immagini */
-  transition: transform 0.3s ease-in-out; /* Effetto di transizione quando si passa sopra con il mouse */
-  margin-bottom: 10px; /* Distanza tra l'immagine e il testo */
+  transition: transform 0.3s ease-in-out; /* Transizione più fluida */
+  margin-bottom: 20px; /* Distanza tra l'immagine e il testo */
 }
 
 .laboratorio-image:hover {
-  transform: scale(1.05); /* Effetto ingrandimento quando si passa sopra con il mouse */
+  transform: scale(1.1); /* Effetto ingrandimento quando si passa sopra con il mouse */
 }
 
 .laboratorio-titolo {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #333; /* Colore del titolo */
+  font-size: 1.4em; /* Aumenta la dimensione del titolo per renderlo più visibile */
+  color: #333; /* Colore scuro per il titolo */
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .laboratorio-descrizione {
   font-size: 1em;
-  color: #666; /* Colore descrizione */
+  color: #666; /* Colore più chiaro per la descrizione */
   text-align: center;
-  margin-top: 5px;
-  padding: 0 10px;
+  margin-top: 10px;
+  padding: 0 15px; /* Distanza sui lati per una lettura più comoda */
+  line-height: 1.5;
 }
 
 /* Media query per dispositivi mobili */
