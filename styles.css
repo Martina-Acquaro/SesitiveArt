@@ -1,6 +1,50 @@
 body{
   font-family: 'REDEAX PRO', sans-serif;
-  
+
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #e82d8a;
+            padding: 10px;
+            justify-content: flex-end; /* Sposta il menu a destra */
+        }
+        /* Logo */
+        .logo {
+          background-color: white;
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px;
+          overflow: hidden;
+      }
+      .logo img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end; /* Sposta i menu items a destra */
+        flex-grow: 1;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
   #sensitive-art {
     height: 100vh; /* Imposta l'altezza al 100% della finestra del browser */
     width: 100%; /* Imposta la larghezza al 100% */
@@ -167,29 +211,5 @@ h2 {
   margin-top: 10px;
   padding: 0 15px; /* Distanza sui lati per una lettura più comoda */
   line-height: 1.5;
-}
-
-/* Media query per dispositivi mobili */
-@media (max-width: 768px) {
-  .laboratori-container {
-    flex-direction: column; /* Le immagini e il testo sono in colonna su schermi piccoli */
-    align-items: center; /* Allinea al centro */
-  }
-
-  .laboratorio-item {
-    max-width: 90%; /* Limita la larghezza al 90% su schermi piccoli */
-    margin-bottom: 20px; /* Distanza tra gli elementi */
-  }
-}
-
-/* Media query per schermi più larghi */
-@media (min-width: 1200px) {
-  .laboratori-container {
-    justify-content: space-evenly; /* Distribuisce uniformemente gli elementi su schermi più larghi */
-  }
-
-  .laboratorio-item {
-    width: 30%; /* Imposta la larghezza al 30% su schermi più larghi */
-  }
 }
 
