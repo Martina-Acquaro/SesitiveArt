@@ -237,28 +237,94 @@ body {
 
   #footer {
     background-color: #e82d8a; /* Colore di sfondo chiaro */
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+}
+#contattami {
+    background-color: #e82d8a; /* Colore di sfondo chiaro */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra */
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+#contattami {
+  background-color: #e82d8a; 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra */
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+#contattami h2 {
+  font-family: "REDEAX PRO", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Titolo in maiuscolo */
+  color: white; /* Impostato il colore del testo in bianco */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #d5008f;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #d5008f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #52dbfd; /* Cambia il colore quando si passa sopra con il mouse */
 }
 
 #Contatti h2 {
-    color: white; /* Colore fucsia per il titolo */
-    font-size: 24px;
+    color: rgb(255, 255, 255); /
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
 .contatti-list {
-    list-style-type: none; /* Rimuove i pallini dalla lista */
+    list-style-type: none; 
     padding: 0;
 }
 
 .contatti-list li {
-    margin-bottom: 10px; /* Distanza tra le voci */
+    margin-bottom: 10px; 
     font-size: 16px;
 }
 
 .contatti-list a {
-    color: white; /* Colore fucsia per i link */
+    color: white; 
     text-decoration: none; /* Rimuove la sottolineatura dai link */
 }
 
