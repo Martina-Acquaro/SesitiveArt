@@ -1,54 +1,63 @@
-body{
-  font-family: 'REDEAX PRO', sans-serif;
+body {
+  font-family: "REDEAX PRO", sans-serif;
 
-        nav {
-            display: flex;
-            align-items: center;
-            background-color: #e82d8a;
-            padding: 10px;
-            justify-content: flex-end; /* Sposta il menu a destra */
-        }
-        /* Logo */
-        .logo {
-          background-color: white;
-          border-radius: 50%;
-          width: 80px;
-          height: 80px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 20px;
-          overflow: hidden;
-      }
-      .logo img {
-        width: 90%;
-        height: 90%;
-        object-fit: contain;
-    }
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: #e82d8a;
+    padding: 10px;
+    justify-content: flex-end; /* Sposta il menu a destra */
+  }
+  /* Logo */
+  .logo {
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .logo img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
 
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end; /* Sposta i menu items a destra */
-        flex-grow: 1;
-    }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Sposta i menu items a destra */
+    flex-grow: 1;
+  }
 
-    nav ul li {
-        margin-right: 20px;
-    }
+  nav ul li {
+    margin-right: 20px;
+  }
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .mainTitle
+  font-size: 4rem;
+  font-family: "REDEAX PRO", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  z-index: 2;
+}
 
   #sensitive-art {
     height: 100vh; /* Imposta l'altezza al 100% della finestra del browser */
     width: 100%; /* Imposta la larghezza al 100% */
-    background-image: url('img/IMG_3233.jpeg'); /* Sostituisci con il percorso giusto */
+    background-image: url("img/IMG_3233.jpeg"); /* Sostituisci con il percorso giusto */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
     background-size: cover; /* Fa in modo che l'immagine copra l'intero schermo */
@@ -60,10 +69,10 @@ body{
     justify-content: center; /* Centra il testo verticalmente */
     align-items: center; /* Centra il testo orizzontalmente */
     position: relative; /* Per aggiungere un overlay sopra l'immagine */
-}
+  }
 
-/* Aggiungi un overlay per migliorare il contrasto del testo */
-#sensitive-art::before {
+  /* Aggiungi un overlay per migliorare il contrasto del testo */
+  #sensitive-art::before {
     content: "";
     position: absolute;
     top: 0;
@@ -72,144 +81,149 @@ body{
     height: 100%;
     background: rgba(0, 0, 0, 0.4); /* Sovrapposizione semi-trasparente */
     z-index: 1;
-}
+  }
 
-/* Stile per il titolo */
-h2 {
+  /* Stile per il titolo */
+  h2 {
     font-size: 4rem; /* Dimensione del testo del titolo molto grande */
-    font-family:'REDEAX PRO', sans-serif; /* Scegli una font moderna e leggibile */
+    font-family: "REDEAX PRO", sans-serif; /* Scegli una font moderna e leggibile */
     font-weight: bold; /* Aumenta la spessore del font per renderlo più visibile */
-    color: #fff; /* Colore bianco per il titolo */
+    color: #e82d8a; /* Colore bianco per il titolo */
     margin-bottom: 30px; /* Aggiungi spazio tra il titolo e il paragrafo */
     z-index: 2; /* Posiziona il titolo sopra l'overlay */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Ombra per migliorare la leggibilità */
-}
+  }
 
-/* Stile per il paragrafo */
-.paragrafo {
+  /* Stile per il paragrafo */
+  .paragrafo {
     font-size: 1.8rem; /* Aumenta la dimensione del testo del paragrafo */
-    font-family:'REDEAX PRO', sans-serif;/* Font leggibile */
+    font-family: "REDEAX PRO", sans-serif; /* Font leggibile */
     z-index: 2; /* Posiziona il paragrafo sopra l'overlay */
     max-width: 800px; /* Limita la larghezza per rendere il testo più leggibile */
     margin: 0 auto; /* Centra il testo */
     padding: 0 20px; /* Aggiungi un po' di padding laterale */
     line-height: 1.6; /* Aggiungi spazio tra le righe del paragrafo per leggibilità */
     color: #fff;
+  }
 
-}
+  .paragrafoBlack{
+    font-size: 1.8rem; /* Aumenta la dimensione del testo del paragrafo */
+    font-family: "REDEAX PRO", sans-serif; /* Font leggibile */
+    z-index: 2; /* Posiziona il paragrafo sopra l'overlay */
+    max-width: 800px; /* Limita la larghezza per rendere il testo più leggibile */
+    margin: 0 auto; /* Centra il testo */
+    padding: 0 20px; /* Aggiungi un po' di padding laterale */
+    line-height: 1.6; /* Aggiungi spazio tra le righe del paragrafo per leggibilità */
+    color: black;
+  }
 
-#chisono {
-  text-align: center;
-  align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+  #chisono {
+    text-align: center;
+    align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+  }
 
-}
+  .contenitore {
+    display: flex;
+    align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+  }
 
-.contenitore {
-  display: flex;
-  align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
-}
+  .immagine {
+    margin-right: 100 px; /* Aggiungi spazio tra l'immagine e il testo */
+  }
 
+  .testo {
+    max-width: 600px; /* Imposta la larghezza massima del testo, per evitare che diventi troppo largo */
+  }
 
-.immagine {
-  margin-right: 100 px; /* Aggiungi spazio tra l'immagine e il testo */
-}
+  .chi-sono-container {
+    display: flex;
+    flex-direction: column; /* Cambia la direzione da orizzontale a verticale */
+    align-items: center; /* Centra gli elementi orizzontalmente */
+    margin-top: 20px;
+  }
 
+  .chi-sono-text {
+    padding-top: 20px; /* Aggiunge spazio sopra al testo */
+    text-align: center; /* Centra il testo */
+    max-width: 800px; /* Imposta una larghezza massima per il testo */
+  }
 
-.testo {
-  max-width: 600px; /* Imposta la larghezza massima del testo, per evitare che diventi troppo largo */
-}
+  .chi-sono-image {
+    margin-bottom: 20px; /* Distanza tra immagine e testo */
+  }
 
+  .img-cerchio {
+    width: 200px; /* Imposta una larghezza per l'immagine */
+    height: 200px; /* Imposta l'altezza dell'immagine */
+    object-fit: cover; /* Copre completamente il cerchio senza distorsioni */
+    border-radius: 50%; /* Crea il cerchio */
+    border: 5px solid white; /* Bordo bianco per l'immagine */
+  }
 
-.chi-sono-container {
-  display: flex;
-  flex-direction: column; /* Cambia la direzione da orizzontale a verticale */
-  align-items: center; /* Centra gli elementi orizzontalmente */
-  margin-top: 20px;
-}
+  #laboratori {
+    padding: 40px;
+    text-align: center; /* Centra il titolo */
+    background-color: #f9f9f9; /* Aggiunge uno sfondo chiaro alla sezione */
+    border-radius: 8px; /* Bordo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra intorno alla sezione */
+  }
 
+  .laboratori-container {
+    display: flex;
+    flex-wrap: wrap; /* Permette alle immagini di andare a capo se lo spazio non è sufficiente */
+    justify-content: space-evenly; /* Allinea gli elementi con spazio uguale tra di loro */
+    gap: 30px; /* Distanza tra gli elementi */
+    margin-top: 30px;
+  }
 
-.chi-sono-text {
-  padding-top: 20px; /* Aggiunge spazio sopra al testo */
-  text-align: center; /* Centra il testo */
-  max-width: 800px; /* Imposta una larghezza massima per il testo */
-  
-}
+  .laboratorio-item {
+    display: flex;
+    flex-direction: column; /* Posiziona l'immagine sopra il testo */
+    align-items: center; /* Allinea il contenuto al centro */
+    width: 100%;
+    max-width: 320px; /* Limita la larghezza massima */
+    background-color: #fff; /* Aggiungi uno sfondo bianco per ogni laboratorio */
+    border-radius: 12px; /* Angoli arrotondati per i singoli elementi */
+    padding: 20px; /* Spaziatura interna */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più marcata per l'effetto card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizione migliorata */
+  }
 
+  .laboratorio-item:hover {
+    transform: translateY(
+      -10px
+    ); /* Sposta l'elemento verso l'alto al passaggio del mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Ombra più marcata al passaggio del mouse */
+  }
 
-.chi-sono-image {
-  margin-bottom: 20px; /* Distanza tra immagine e testo */
-}
+  .laboratorio-image {
+    width: 200px; /* Dimensione più compatta per l'immagine */
+    height: 200px; /* Imposta un'altezza fissa per l'immagine */
+    border-radius: 50%; /* Rende l'immagine circolare */
+    object-fit: cover; /* Ritaglia l'immagine per riempire il cerchio senza distorsioni */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera intorno alle immagini */
+    transition: transform 0.3s ease-in-out; /* Transizione più fluida */
+    margin-bottom: 20px; /* Distanza tra l'immagine e il testo */
+  }
 
+  .laboratorio-image:hover {
+    transform: scale(
+      1.1
+    ); /* Effetto ingrandimento quando si passa sopra con il mouse */
+  }
 
-.img-cerchio {
-  width: 200px; /* Imposta una larghezza per l'immagine */
-  height: 200px; /* Imposta l'altezza dell'immagine */
-  object-fit: cover; /* Copre completamente il cerchio senza distorsioni */
-  border-radius: 50%; /* Crea il cerchio */
-  border: 5px solid white; /* Bordo bianco per l'immagine */
-}
+  .laboratorio-titolo {
+    font-size: 1.4em; /* Aumenta la dimensione del titolo per renderlo più visibile */
+    color: #333; /* Colore scuro per il titolo */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
-#laboratori {
-  padding: 40px;
-  text-align: center; /* Centra il titolo */
-  background-color: #f9f9f9; /* Aggiunge uno sfondo chiaro alla sezione */
-  border-radius: 8px; /* Bordo */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra intorno alla sezione */
-}
-
-.laboratori-container {
-  display: flex;
-  flex-wrap: wrap; /* Permette alle immagini di andare a capo se lo spazio non è sufficiente */
-  justify-content: space-evenly; /* Allinea gli elementi con spazio uguale tra di loro */
-  gap: 30px; /* Distanza tra gli elementi */
-  margin-top: 30px;
-}
-
-.laboratorio-item {
-  display: flex;
-  flex-direction: column; /* Posiziona l'immagine sopra il testo */
-  align-items: center; /* Allinea il contenuto al centro */
-  width: 100%;
-  max-width: 320px; /* Limita la larghezza massima */
-  background-color: #fff; /* Aggiungi uno sfondo bianco per ogni laboratorio */
-  border-radius: 12px; /* Angoli arrotondati per i singoli elementi */
-  padding: 20px; /* Spaziatura interna */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più marcata per l'effetto card */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizione migliorata */
-}
-
-.laboratorio-item:hover {
-  transform: translateY(-10px); /* Sposta l'elemento verso l'alto al passaggio del mouse */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Ombra più marcata al passaggio del mouse */
-}
-
-.laboratorio-image {
-  width: 200px; /* Dimensione più compatta per l'immagine */
-  height: 200px; /* Imposta un'altezza fissa per l'immagine */
-  border-radius: 50%; /* Rende l'immagine circolare */
-  object-fit: cover; /* Ritaglia l'immagine per riempire il cerchio senza distorsioni */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera intorno alle immagini */
-  transition: transform 0.3s ease-in-out; /* Transizione più fluida */
-  margin-bottom: 20px; /* Distanza tra l'immagine e il testo */
-}
-
-.laboratorio-image:hover {
-  transform: scale(1.1); /* Effetto ingrandimento quando si passa sopra con il mouse */
-}
-
-.laboratorio-titolo {
-  font-size: 1.4em; /* Aumenta la dimensione del titolo per renderlo più visibile */
-  color: #333; /* Colore scuro per il titolo */
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.laboratorio-descrizione {
-  font-size: 1em;
-  color: #666; /* Colore più chiaro per la descrizione */
-  text-align: center;
-  margin-top: 10px;
-  padding: 0 15px; /* Distanza sui lati per una lettura più comoda */
-  line-height: 1.5;
-}
-
+  .laboratorio-descrizione {
+    font-size: 1em;
+    color: #666; /* Colore più chiaro per la descrizione */
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px; /* Distanza sui lati per una lettura più comoda */
+    line-height: 1.5;
+  }
