@@ -45,4 +45,3 @@ Ogni modifica viene controllata appena inserita in repository tramite il [seguen
 
 Materiale in italiano propedeutico alla realizzazione del corso di WebDesign per [Accademia di Belle Arti di Novara](http://www.acmenovara.it/)
 Sito per brand Sensitive Art 
-ciaoooooooooo

@@ -94,23 +94,23 @@ body {
 
   /* Stile per il paragrafo */
   .paragrafo {
-    font-size: 1.8rem; /* Aumenta la dimensione del testo del paragrafo */
-    font-family: "REDEAX PRO", sans-serif; /* Font leggibile */
+    font-size: 1.8rem; 
+    font-family: "REDEAX PRO", sans-serif; 
     z-index: 2; /* Posiziona il paragrafo sopra l'overlay */
-    max-width: 800px; /* Limita la larghezza per rendere il testo più leggibile */
+    max-width: 800px;
     margin: 0 auto; /* Centra il testo */
-    padding: 0 20px; /* Aggiungi un po' di padding laterale */
-    line-height: 1.6; /* Aggiungi spazio tra le righe del paragrafo per leggibilità */
+    padding: 0 20px; 
+    line-height: 1.6; /* spazio tra le righe del paragrafo per leggibilità */
     color: #fff;
   }
 
   .paragrafoBlack{
-    font-size: 1.5rem; /* Aumenta la dimensione del testo del paragrafo */
-    font-family: "REDEAX PRO", sans-serif; /* Font leggibile */
-    z-index: 2; /* Posiziona il paragrafo sopra l'overlay */
-    max-width: 800px; /* Limita la larghezza per rendere il testo più leggibile */
+    font-size: 1.5rem; 
+    font-family: "REDEAX PRO", sans-serif;
+    z-index: 2; 
+    max-width: 800px; 
     margin: 0 auto; /* Centra il testo */
-    padding: 0 20px; /* Aggiungi un po' di padding laterale */
+    padding: 0 20px; 
     line-height: 1.6; /* Aggiungi spazio tra le righe del paragrafo per leggibilità */
     color: black;
   }
@@ -177,13 +177,13 @@ body {
   .laboratorio-item {
     display: flex;
     flex-direction: column; /* Posiziona l'immagine sopra il testo */
-    align-items: center; /* Allinea il contenuto al centro */
+    align-items: center;
     width: 100%;
     max-width: 320px; /* Limita la larghezza massima */
-    background-color: #fff; /* Aggiungi uno sfondo bianco per ogni laboratorio */
-    border-radius: 12px; /* Angoli arrotondati per i singoli elementi */
+    background-color: #fff; 
+    border-radius: 12px; 
     padding: 20px; /* Spaziatura interna */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più marcata per l'effetto card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizione migliorata */
   }
 
@@ -211,40 +211,36 @@ body {
   }
 
   .laboratorio-titolo {
-    font-size: 1.4em; /* Aumenta la dimensione del titolo per renderlo più visibile */
-    color: #333; /* Colore scuro per il titolo */
+    font-size: 1.4em; 
+    color: #333; 
     font-weight: bold;
     margin-bottom: 10px;
   }
 
   .laboratorio-descrizione {
     font-size: 1em;
-    color: #666; /* Colore più chiaro per la descrizione */
+    color: #666; 
     text-align: center;
     margin-top: 10px;
-    padding: 0 15px; /* Distanza sui lati per una lettura più comoda */
+    padding: 0 15px;
     line-height: 1.5;
   }
   #contattami {
     text-align: center;
-    align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+    align-items: center; 
   }
 
   #dove-trovarmi {
     text-align: center;
-    align-items: center; /* Allinea l'immagine e il testo al centro verticalmente */
+    align-items: center; 
   }
 
-  #footer {
-    background-color: #e82d8a; /* Colore di sfondo chiaro */
-    padding: 5px;
-    text-align: center;
-}
+ 
 #contattami {
-    background-color: #e82d8a; /* Colore di sfondo chiaro */
+    background-color: #e82d8a; 
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
@@ -255,7 +251,7 @@ body {
   background-color: #e82d8a; 
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
@@ -268,7 +264,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase; /* Titolo in maiuscolo */
-  color: white; /* Impostato il colore del testo in bianco */
+  color: white; 
 }
 
 form {
@@ -308,8 +304,8 @@ button:hover {
 }
 
 #Contatti h2 {
-    color: rgb(255, 255, 255); /
-    font-size: 14px;
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -330,4 +326,9 @@ button:hover {
 
 .contatti-list a:hover {
     text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+}
+ #footer {
+    background-color: #e82d8a; 
+    padding: 4px;
+    text-align: center;
 }
