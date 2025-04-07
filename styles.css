@@ -151,8 +151,8 @@ body {
   }
 
   .img-cerchio {
-    width: 200px; /* Imposta una larghezza per l'immagine */
-    height: 200px; /* Imposta l'altezza dell'immagine */
+    width: 200px; 
+    height: 200px; 
     object-fit: cover; /* Copre completamente il cerchio senza distorsioni */
     border-radius: 50%; /* Crea il cerchio */
     border: 5px solid white; /* Bordo bianco per l'immagine */
@@ -166,65 +166,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra intorno alla sezione */
   }
 
-  .laboratori-container {
-    display: flex;
-    flex-wrap: wrap; /* Permette alle immagini di andare a capo se lo spazio non è sufficiente */
-    justify-content: space-evenly; /* Allinea gli elementi con spazio uguale tra di loro */
-    gap: 30px; /* Distanza tra gli elementi */
-    margin-top: 30px;
-  }
 
-  .laboratorio-item {
-    display: flex;
-    flex-direction: column; /* Posiziona l'immagine sopra il testo */
-    align-items: center;
-    width: 100%;
-    max-width: 320px; /* Limita la larghezza massima */
-    background-color: #fff; 
-    border-radius: 12px; 
-    padding: 20px; /* Spaziatura interna */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizione migliorata */
-  }
-
-  .laboratorio-item:hover {
-    transform: translateY(
-      -10px
-    ); /* Sposta l'elemento verso l'alto al passaggio del mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Ombra più marcata al passaggio del mouse */
-  }
-
-  .laboratorio-image {
-    width: 200px; /* Dimensione più compatta per l'immagine */
-    height: 200px; /* Imposta un'altezza fissa per l'immagine */
-    border-radius: 50%; /* Rende l'immagine circolare */
-    object-fit: cover; /* Ritaglia l'immagine per riempire il cerchio senza distorsioni */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera intorno alle immagini */
-    transition: transform 0.3s ease-in-out; /* Transizione più fluida */
-    margin-bottom: 20px; /* Distanza tra l'immagine e il testo */
-  }
-
-  .laboratorio-image:hover {
-    transform: scale(
-      1.1
-    ); /* Effetto ingrandimento quando si passa sopra con il mouse */
-  }
-
-  .laboratorio-titolo {
-    font-size: 1.4em; 
-    color: #333; 
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .laboratorio-descrizione {
-    font-size: 1em;
-    color: #666; 
-    text-align: center;
-    margin-top: 10px;
-    padding: 0 15px;
-    line-height: 1.5;
-  }
   #contattami {
     text-align: center;
     align-items: center; 
@@ -332,3 +274,50 @@ button:hover {
     padding: 4px;
     text-align: center;
 }
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: "REDEAX PRO", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 200%;
+  height: 200%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 5px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+swiper-container {
+  width: 100%;
+  height: 500px;
+  margin: 60px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
