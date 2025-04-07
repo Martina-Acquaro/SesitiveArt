@@ -54,8 +54,8 @@ body {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); 
   }
   #sensitive-art {
-    height: 100vh; /* Imposta l'altezza al 100% della finestra del browser */
-    width: 100%; /* Imposta la larghezza al 100% */
+    height: 100vh; 
+    width: 100%; 
     background-image: url("img/IMG_3233.jpeg"); /* Sostituisci con il percorso giusto */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
@@ -70,7 +70,6 @@ body {
     position: relative; /* Per aggiungere un overlay sopra l'immagine */
   }
 
-  /* Aggiungi un overlay per migliorare il contrasto del testo */
   #sensitive-art::before {
     content: "";
     position: absolute;
