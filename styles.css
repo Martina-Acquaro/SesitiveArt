@@ -178,7 +178,6 @@ body {
     align-items: center; 
   }
 
- 
 #contattami {
     background-color: #e82d8a; 
   padding: 30px;
@@ -322,3 +321,76 @@ swiper-container {
   margin-top: 20px;
 }
 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Imposta il layout responsivo per il body */
+body {
+  font-size: 16px; /* Usa una dimensione base */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adatta swiper-container */
+swiper-container {
+  width: 100%;
+  height: auto; /* Adatta l'altezza automaticamente */
+  margin: 60px auto;
+}
+
+/* Adatta swiper-slide */
+swiper-slide img {
+  width: 100%; /* Usa il 100% della larghezza del contenitore */
+  height: auto; /* Mantieni le proporzioni */
+  object-fit: cover;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.5rem; /* Riduci la dimensione del titolo */
+  }
+
+  .paragrafo, .paragrafoBlack {
+    font-size: 1.2rem; /* Riduci la dimensione del testo */
+  }
+
+  .img-cerchio {
+    width: 150px; /* Riduci la dimensione dell'immagine */
+    height: 150px;
+  }
+
+  #contattami {
+    padding: 20px;
+    max-width: 90%; /* Riduci la larghezza massima */
+  }
+
+  button {
+    font-size: 14px; /* Riduci la dimensione del testo del bottone */
+  }
+}
+
+/* Media query per schermi molto piccoli (es. smartphone) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem; /* Riduci ulteriormente la dimensione del titolo */
+  }
+
+  .paragrafo, .paragrafoBlack {
+    font-size: 1rem; /* Riduci ulteriormente la dimensione del testo */
+  }
+
+  .img-cerchio {
+    width: 120px; /* Riduci ulteriormente la dimensione dell'immagine */
+    height: 120px;
+  }
+
+  #contattami {
+    padding: 15px;
+    max-width: 100%; /* Usa tutta la larghezza disponibile */
+  }
+}
