@@ -242,6 +242,29 @@ button {
 button:hover {
   background-color: #52dbfd; /* Cambia il colore quando si passa sopra con il mouse */
 }
+#dove-trovarmi {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Sfondo chiaro */
+  border-radius: 8px; /* Bordo arrotondato */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra leggera */
+}
+
+.map-container {
+  position: relative;
+  width: 100%; /* Adatta la larghezza al contenitore */
+  max-width: 1200px; /* Imposta una larghezza massima */
+  margin: 0 auto; /* Centra la mappa */
+  overflow: hidden;
+  border-radius: 8px; /* Bordo arrotondato */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra leggera */
+}
+
+.map-container iframe {
+  width: 100%; /* Adatta la larghezza al contenitore */
+  height: 450px; /* Altezza fissa */
+  border: 0; /* Rimuove il bordo dell'iframe */
+}
 
 #Contatti h2 {
     color: rgb(255, 255, 255); 
@@ -319,7 +342,7 @@ swiper-container {
   margin-top: 20px;
 }
 
-{
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -496,4 +519,14 @@ nav {
       display: flex;
     }
   }
-  
+  @media (max-width: 768px) {
+  .map-container {
+    padding-bottom: 75%; /* Cambia il rapporto per schermi più piccoli */
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    padding-bottom: 100%; /* Cambia il rapporto per schermi molto piccoli */
+  }
+}
