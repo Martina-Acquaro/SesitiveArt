@@ -164,10 +164,8 @@ body {
     border-radius: 8px; /* Bordo */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra intorno alla sezione */
   }
-#GALLERIA h2{
-  text-align: center;
-  align-items: center; 
-}
+
+
   #contattami {
     text-align: center;
     align-items: center; 
@@ -326,7 +324,7 @@ swiper-container {
   margin: 0;
   padding: 0;
 }
-
+ 
 /* Imposta il layout responsivo per il body */
 body {
   font-size: 16px; /* Usa una dimensione base */
@@ -498,3 +496,4 @@ nav {
       display: flex;
     }
   }
+  
