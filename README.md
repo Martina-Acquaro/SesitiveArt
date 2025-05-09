@@ -13,7 +13,7 @@ Progetto per la realizzazione di una pagina statica
 
 Il repository è pubblicato a questo indirizzo 
 - Versione Netlify [https://sensitiveart.netlify.app/](https://sensitiveart.netlify.app/)
-- Versione Vercel [https://github-netlify-boilerplate.vercel.app](https://github-netlify-boilerplate.vercel.app)
+- Versione Vercel [https://github.com/Martina-Acquaro/SesitiveArt/blob/main/index.html](https://github-netlify-boilerplate.vercel.app)
 
 ## Automazione
 

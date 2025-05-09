@@ -540,6 +540,8 @@ nav {
       transition: all 0.3s ease;
     }
   }
+
+  
   /* Nascondi il menu normale su schermi piccoli */
   
   @media (max-width: 768px) {
