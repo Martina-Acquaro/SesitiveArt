@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html lang="it">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensitive art</title>
-    <link href="https://fonts.google.com/specimen/Readex+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
- 
+    <style>
+        /* Stili base per il menu mobile */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        /* Stile per il menu burger */
+        .burger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        
+        .burger-menu div {
+            width: 30px;
+            height: 3px;
+            background-color: white; /* Cambiato da #333 a white per le lineette */
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        
+        /* Stile per il menu */
+        #menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu li {
+            margin: 0 15px;
+        }
+        
+        #menu li a {
+            text-decoration: none;
+            color: #e7e7e7;
+            font-weight: 500;
+        }
+        
+        /* Stili per dispositivi mobili */
+        @media screen and (max-width: 768px) {
+            .burger-menu {
+                display: flex;
+            }
+            
+            .burger-menu div {
+                background-color: white; /* Mantiene le lineette bianche anche sui dispositivi mobili */
+                height: 3px;
+                width: 30px;
+            }
+            
+            #menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: right 0.5s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            #menu.active {
+                right: 0;
+            }
+            
+            #menu li {
+                margin: 20px 0;
+            }
+            
+            #menu li a {
+                color: #000; /* Cambiato il colore del testo a nero nella modalità mobile */
+                font-weight: 600; /* Reso leggermente più visibile */
+            }
+            
+            /* Animazione per il burger menu quando è attivo */
+            .burger-menu.active div:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .burger-menu.active div:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .burger-menu.active div:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="img/logo sensitive art.png" alt="logosensitivrart" height="50">
+            <img src="img/logo sensitive art.png" alt="logosensitiveart" height="50">
         </div>
         <div class="burger-menu" id="burger-menu">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <ul id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="menu">
             <li><a href="#chisono">Chi Sono</a></li>
             <li><a href="#laboratori">I Miei Laboratori</a></li>
             <li><a href="#contattami">Contattami</a></li>
@@ -29,110 +128,73 @@
             <li><a href="#dove-trovarmi">Dove trovarmi</a></li>
         </ul>
     </nav>
-    
 
-</div>
-<div id="sensitive-art">
-    <h2 class="mainTitle">RISVEGLIA LA TUA CREATIVITA' CON SENSITIVE ART!</h2>
-    <p class="paragrafo">
-        Un brand che ti da l'opportunità di provare esperienze artistiche coinvolgenti
-        che trasformano materiali di recupero in opere uniche.
-    </p>
-</div>
-
+    <div id="sensitive-art">
+        <h2 class="mainTitle">RISVEGLIA LA TUA CREATIVITA' CON SENSITIVE ART!</h2>
+        <p class="paragrafo">
+            Un brand che ti da l'opportunità di provare esperienze artistiche coinvolgenti
+            che trasformano materiali di recupero in opere uniche.
+        </p>
     </div>
+
     <div id="chisono">
-    <h2>CHI SONO?</h2>
-    <div class="chi-sono-container">
-        <div class="chi-sono-image">
-            <img src="img/DSC_0212.JPG" alt="FOTOMarty" class="img-cerchio">
-        </div>
-        <div class="chi-sono-text">
-            <p class="paragrafoBlack">
-                Acquaro Martina, ho 21 anni e vivo in Italia, in un piccolo paese vicino a Milano.
-                Sono diplomata in studi sui laboratori artistici ed esperienziali e attualmente sto studiando Graphic Design.
-                Sono appassionata allo studio del movimento del corpo e del teatro espressivo, grazie a questo background
-                creo laboratori di teatro, movimento e arti visive. Lavoro come youth worker per un’associazione Erasmus in
-                Italia, collaborando alla realizzazione di progetti ed eventi. La mia passione per i viaggi mi ha permesso di
-                partecipare a progetti in tutta Europa con loro. Realizzo workshop e laboratori artistici su misura, mantenendo
-                costanti gli obiettivi di sensibilizzare le persone sul corretto uso dei materiali, di utilizzo di materiali di
-                recupero e di sostenibilità ambientale.
-            </p>
+        <h2>CHI SONO?</h2>
+        <div class="chi-sono-container">
+            <div class="chi-sono-image">
+                <img src="img/DSC_0212.JPG" alt="FOTOMarty" class="img-cerchio">
+            </div>
+            <div class="chi-sono-text">
+                <p class="paragrafoBlack">
+                    Acquaro Martina, ho 21 anni e vivo in Italia, in un piccolo paese vicino a Milano.
+                    Sono diplomata in studi sui laboratori artistici ed esperienziali e attualmente sto studiando Graphic Design.
+                    Sono appassionata allo studio del movimento del corpo e del teatro espressivo, grazie a questo background
+                    creo laboratori di teatro, movimento e arti visive. Lavoro come youth worker per un'associazione Erasmus in
+                    Italia, collaborando alla realizzazione di progetti ed eventi. La mia passione per i viaggi mi ha permesso di
+                    partecipare a progetti in tutta Europa con loro. Realizzo workshop e laboratori artistici su misura, mantenendo
+                    costanti gli obiettivi di sensibilizzare le persone sul corretto uso dei materiali, di utilizzo di materiali di
+                    recupero e di sostenibilità ambientale.
+                </p>
+            </div>
         </div>
     </div>
-
-</div>
 
     <div id="laboratori">
         <h2>I MIEI LABORATORI</h2>
         <div class="laboratori-container">
-        <p class="paragrafoBlack">
-            Ogni laboratorio nasce con l'idea di voler far provare un'esperienza artistica alle persone, 
-            andando ad utilizzare principalmente materiali di recupero.
-            Si basano sul metodo ArtLab dove partendo da una fase inizale, 
-            la persona inizia a connettersi con il metodo artistico che si andrà ad utilizzare per poi essere trasportato in una dimensione di creazione personale. 
-        </p>
-</div>
+            <p class="paragrafoBlack">
+                Ogni laboratorio nasce con l'idea di voler far provare un'esperienza artistica alle persone,
+                andando ad utilizzare principalmente materiali di recupero.
+                Si basano sul metodo ArtLab dove partendo da una fase inizale,
+                la persona inizia a connettersi con il metodo artistico che si andrà ad utilizzare per poi essere trasportato in una dimensione di creazione personale.
+            </p>
+        </div>
 
-</div>
-<body>
+        <swiper-container class="mySwiper" slides-per-view="auto" centered-slides="true" space-between="30" pagination="true" pagination-type="fraction" navigation="true" breakpoints='{
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 10
+            },
+            "480": {
+              "slidesPerView": 1,
+              "spaceBetween": 20
+            },
+            "640": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            },
+            "768": {
+              "slidesPerView": 3,
+              "spaceBetween": 30
+            }
+          }'>
+            <swiper-slide> <img src="img/IMG_3041.jpeg" alt="haiku" class="laboratorio-image"></swiper-slide>
+            <swiper-slide><img src="img/IMG_3434.jpeg" alt="mask" class="laboratorio-image"></swiper-slide>
+            <swiper-slide><img src="img/IMG_2980.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
+            <swiper-slide><img src="img/IMG_3233.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
+            <swiper-slide><img src="img/IMG_3366.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
+        </swiper-container>
+    </div>
 
-    <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30" pagination="true"
-      pagination-type="fraction" navigation="true">
-      <swiper-slide> <img src="img/IMG_3041.jpeg" alt="haiku" class="laboratorio-image"></swiper-slide>
-      <swiper-slide><img src="img/IMG_3434.jpeg" alt="mask" class="laboratorio-image"></swiper-slide>
-      <swiper-slide><img src="img/IMG_2980.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
-      <swiper-slide><img src="img/IMG_3233.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
-      <swiper-slide><img src="img/IMG_3366.jpeg" alt="SPONGEBOB" class="laboratorio-image"></swiper-slide>
-    </swiper-container>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  
-    <script>
-      const swiperEl = document.querySelector('swiper-container');
-      const swiper = swiperEl.swiper;
-  
-      var appendNumber = 4;
-      var prependNumber = 1;
-      document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          swiper.prependSlide([
-            '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
-            '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
-          ]);
-        });
-      document
-        .querySelector(".prepend-slide")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          swiper.prependSlide(
-            '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>"
-          );
-        });
-      document
-        .querySelector(".append-slide")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          swiper.appendSlide(
-            '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>"
-          );
-        });
-      document
-        .querySelector(".append-2-slides")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          swiper.appendSlide([
-            '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
-            '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
-          ]);
-        });
-    </script>
-  </body>
-</div>
-
- </div>
     <div id="contattami" class="section">
         <h2>CONTATTAMI</h2>
         <form action="mailto:acquaromartina9@gmail.com" method="post" enctype="text/plain">
@@ -143,32 +205,62 @@
         </form>
     </div>
 
-    
     <section id="dove-trovarmi" class="section">
-      <h2 class="section-title">DOVE TROVARMI</h2>
-      <div class="map-container">
-          <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44761.23014071055!2d8.957496064532029!3d45.478326678520546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ec0132baf71b%3A0x40678022e66f150!2s20008%20Bareggio%2C%20Metropolitan%20City%20of%20Milan!5e0!3m2!1sit!2sit!4v1742809786121!5m2!1sit!2sit" 
-              width="100%" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-      </div>
-  </section>
+        <h2 class="section-title">DOVE TROVARMI</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44761.23014071055!2d8.957496064532029!3d45.478326678520546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ec0132baf71b%3A0x40678022e66f150!2s20008%20Bareggio%2C%20Metropolitan%20City%20of%20Milan!5e0!3m2!1sit!2sit!4v1742809786121!5m2!1sit!2sit" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
 
-    <div id="footer">
+    <footer id="footer">
         <div id="Contatti">
-        <h2>CONTATTI</h2>
-        <ul class="contatti-list">
-            Email: <a href="mailto:sensitiveart@gmail.com">sensitiveart@gmail.com</a>
-            Telefono: <a href="tel:+393661164936">+393661164936</a>
-            Instagram: <a href="https://www.instagram.com/sensitive_art_/" target="_blank">@sensitiveart</a>
-        </ul>
-         <img src="path/to/logo.png" alt=> <!-- Sostituisci "path/to/logo.png" con il percorso corretto -->
-    <span>&copy; 2025 Sensitive Art</span>
-    </div>
-   
+            <h2>CONTATTI</h2>
+            <ul class="contatti-list">
+                <li>Email: <a href="mailto:sensitiveart@gmail.com">sensitiveart@gmail.com</a></li>
+                <li>Telefono: <a href="tel:+393661164936">+393661164936</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/sensitive_art_/" target="_blank">@sensitiveart</a></li>
+            </ul>
+            <img src="" alt="">
+            <span>&copy; 2025 Sensitive Art</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    <script>
+        // Script per il funzionamento del menu a tendina
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const menu = document.getElementById('menu');
+            
+            burgerMenu.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                burgerMenu.classList.toggle('active');
+            });
+            
+            // Chiudi il menu quando si clicca su un link
+            const menuLinks = document.querySelectorAll('#menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    menu.classList.remove('active');
+                    burgerMenu.classList.remove('active');
+                });
+            });
+        });
+        
+        // Script per lo swiper (già presente nel tuo codice)
+        const swiperEl = document.querySelector('swiper-container');
+        if (swiperEl) {
+            const swiper = swiperEl.swiper;
+        }
+    </script>
+</body>
 </html>
