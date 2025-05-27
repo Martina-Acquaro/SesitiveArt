@@ -115,7 +115,7 @@ nav {
     width: 70%;
     max-width: 300px;
     height: 100vh;
-    background-color: #ffffff00;
+    background-color: rgba(232, 45, 138, 0.95); /* Sfondo rosa semi-trasparente invece di trasparente */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,12 @@ nav {
     padding: 12px;
     width: 100%;
     font-size: 20px;
+    color: white; /* Assicura che il testo del menu sia bianco */
+  }
+  
+  /* Assicura che le linee del burger siano sempre bianche */
+  .burger-menu div {
+    background-color: #ffffff;
   }
 }
 

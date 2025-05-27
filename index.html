@@ -7,119 +7,17 @@
     <title>Sensitive art</title>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <style>
-        /* Stili base per il menu mobile */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-        }
-        
-        .logo img {
-            height: 50px;
-        }
-        
-        /* Stile per il menu burger */
-        .burger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        
-        .burger-menu div {
-            width: 30px;
-            height: 3px;
-            background-color: white; /* Cambiato da #333 a white per le lineette */
-            margin: 5px 0;
-            transition: all 0.3s ease;
-        }
-        
-        /* Stile per il menu */
-        #menu {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #menu li {
-            margin: 0 15px;
-        }
-        
-        #menu li a {
-            text-decoration: none;
-            color: #e7e7e7;
-            font-weight: 500;
-        }
-        
-        /* Stili per dispositivi mobili */
-        @media screen and (max-width: 768px) {
-            .burger-menu {
-                display: flex;
-            }
-            
-            .burger-menu div {
-                background-color: white; /* Mantiene le lineette bianche anche sui dispositivi mobili */
-                height: 3px;
-                width: 30px;
-            }
-            
-            #menu {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 70%;
-                height: 100vh;
-                background-color: white;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transition: right 0.5s ease;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-                z-index: 999;
-            }
-            
-            #menu.active {
-                right: 0;
-            }
-            
-            #menu li {
-                margin: 20px 0;
-            }
-            
-            #menu li a {
-                color: #000; /* Cambiato il colore del testo a nero nella modalità mobile */
-                font-weight: 600; /* Reso leggermente più visibile */
-            }
-            
-            /* Animazione per il burger menu quando è attivo */
-            .burger-menu.active div:nth-child(1) {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            
-            .burger-menu.active div:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .burger-menu.active div:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
-        }
-    </style>
-</head>
-
 <body>
     <nav>
         <div class="logo">
             <img src="img/logo sensitive art.png" alt="logosensitiveart" height="50">
         </div>
-        <div class="burger-menu" id="burger-menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+   
+<div class="burger-menu" id="burger-menu">
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+</div>
         <ul id="menu">
             <li><a href="#chisono">Chi Sono</a></li>
             <li><a href="#laboratori">I Miei Laboratori</a></li>
@@ -262,5 +160,109 @@
             const swiper = swiperEl.swiper;
         }
     </script>
+
+    <style>
+        /* Stili base per il menu mobile */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        /* Stile per il menu burger */
+        .burger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        
+        .burger-menu div {
+            width: 30px;
+            height: 3px;
+            background-color: white; /* Cambiato da #333 a white per le lineette */
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        
+        /* Stile per il menu */
+        #menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu li {
+            margin: 0 15px;
+        }
+        
+        #menu li a {
+            text-decoration: none;
+            color: #e7e7e7;
+            font-weight: 500;
+        }
+        
+        /* Stili per dispositivi mobili */
+        @media screen and (max-width: 768px) {
+            .burger-menu {
+                display: flex;
+            }
+            
+            .burger-menu div {
+                background-color: white; /* Mantiene le lineette bianche anche sui dispositivi mobili */
+                height: 3px;
+                width: 30px;
+            }
+            
+            #menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: right 0.5s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            #menu.active {
+                right: 0;
+            }
+            
+            #menu li {
+                margin: 20px 0;
+            }
+            
+            #menu li a {
+                color: #000; /* Cambiato il colore del testo a nero nella modalità mobile */
+                font-weight: 600; /* Reso leggermente più visibile */
+            }
+            
+            /* Animazione per il burger menu quando è attivo */
+            .burger-menu.active div:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .burger-menu.active div:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .burger-menu.active div:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    </style>
+</head>
+
 </body>
 </html>
