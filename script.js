@@ -40,24 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const titleElement = document.querySelector('.mainTitle');
-        const fullText = titleElement.textContent;
-        titleElement.textContent = ''; // svuota il titolo
-
-        let index = 0;
-
-        function typeWriter() {
-            if (index < fullText.length) {
-                titleElement.textContent += fullText.charAt(index);
-                index++;
-                setTimeout(typeWriter, 70); // velocità scrittura
-            }
-        }
-
-        typeWriter();
-    });
-</script>
+    
     
 });
