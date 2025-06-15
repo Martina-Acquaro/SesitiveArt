@@ -532,4 +532,42 @@ swiper-slide {
     height: 300px;
   }
   
+}/* Stile del popup */
+.cookie-popup {
+    display: none; /* nascosto di default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+.cookie-popup-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cookie-popup a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.cookie-popup .accept-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cookie-popup .accept-btn:hover {
+    background-color: #45a049;
 }
