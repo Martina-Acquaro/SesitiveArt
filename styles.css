@@ -532,42 +532,98 @@ swiper-slide {
     height: 300px;
   }
   
-}/* Stile del popup */
-.cookie-popup {
-    display: none; /* nascosto di default */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    z-index: 9999;
-    font-family: Arial, sans-serif;
-}
+.laboratori-specializzati {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+          margin: 50px 0;
+          padding: 0 20px;
+        }
 
-.cookie-popup-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        .laboratorio-card {
+          background: white;
+          border-radius: 20px;
+          padding: 30px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
 
-.cookie-popup a {
-    color: #4CAF50;
-    text-decoration: none;
-}
+        .laboratorio-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
 
-.cookie-popup .accept-btn {
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
+        .laboratorio-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: linear-gradient(90deg, #e82d8a, #52dbfd);
+        }
 
-.cookie-popup .accept-btn:hover {
-    background-color: #45a049;
-}
+        .laboratorio-icon {
+          font-size: 4rem;
+          margin-bottom: 20px;
+          display: block;
+        }
+
+        .pittura-icon { color: #ff6b6b; }
+        .meditazione-icon { color: #4ecdc4; }
+        .scultura-icon { color: #45b7d1; }
+
+        .laboratorio-card h3 {
+          font-size: 2rem;
+          color: #333;
+          margin-bottom: 15px;
+          font-weight: 600;
+        }
+
+        .laboratorio-description {
+          font-size: 1.1rem;
+          color: #666;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+
+        .laboratorio-features {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0;
+        }
+
+        .laboratorio-features li {
+          padding: 8px 0;
+          position: relative;
+          padding-left: 25px;
+          color: #555;
+        }
+
+        .laboratorio-features li::before {
+          content: '✨';
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+
+        .laboratorio-btn {
+          background: linear-gradient(135deg, #e82d8a, #52dbfd);
+          color: white;
+          border: none;
+          padding: 12px 25px;
+          border-radius: 25px;
+          font-size: 1rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        .laboratorio-btn:hover {
+          transform: scale(1.05);
+          box-shadow: 0 5px 15px rgba(232, 45, 138, 0.3);
+        }
