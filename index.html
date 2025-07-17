@@ -290,21 +290,13 @@ Lavoro come youth worker per un'associazione Erasmus in Italia, collaborando all
         }
     </style>
 
-<script>
-    // Script per il popup dei cookie
-    document.addEventListener('DOMContentLoaded', function() {
-        const cookiePopup = document.getElementById('cookie-popup');
-        const acceptCookiesBtn = document.getElementById('accept-cookies');
-
-        // Mostra il popup dei cookie
-        cookiePopup.style.display = 'block';
-
-        // Nascondi il popup quando l'utente accetta i cookie
-        acceptCookiesBtn.addEventListener('click', function() {
-            cookiePopup.style.display = 'none';
-            // Qui puoi aggiungere codice per memorizzare la preferenza dell'utente sui cookie
-        });
-    });
-
+<div id="cookie-popup" style="display:none;">
+    <div class="cookie-content">
+        <p>
+            Questo sito utilizza i cookie per migliorare la tua esperienza. Continuando la navigazione accetti la nostra <a href="#">Cookie Policy</a>.
+        </p>
+        <button id="accept-cookies">Accetta</button>
+    </div>
+</div>
 </body>
 </html>
