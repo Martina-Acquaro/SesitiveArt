@@ -1,3 +1,4 @@
+body{
 document.addEventListener('DOMContentLoaded', function() {
     // Script per il funzionamento del menu a tendina
     const burgerMenu = document.getElementById('burger-menu');
@@ -86,3 +87,37 @@ document.addEventListener("DOMContentLoaded", checkCookieConsent);
 
     
 });
+<script>
+        // Script per il funzionamento del menu a tendina
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const menu = document.getElementById('menu');
+            
+            burgerMenu.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                burgerMenu.classList.toggle('active');
+            });
+            
+            // Chiudi il menu quando si clicca su un link
+            const menuLinks = document.querySelectorAll('#menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    menu.classList.remove('active');
+                    burgerMenu.classList.remove('active');
+                });
+            });
+
+            // Swiper autoplay
+            const swiperEl = document.querySelector('swiper-container');
+            if (swiperEl) {
+                swiperEl.setAttribute('autoplay', '{"delay":2500,"disableOnInteraction":false}');
+            }
+        });
+        
+        // Script per lo swiper 
+        const swiperEl = document.querySelector('swiper-container');
+        if (swiperEl) {
+            const swiper = swiperEl.swiper;
+        }
+    </script>
+</body>
